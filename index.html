@@ -13,9 +13,27 @@
     </div>
 
     <div id="contentSection">
-        <div id="post-list"></div>
+        <div id="leftColumn">
+            <div id="post-list"><h2>Blogs</h2></div>            
+            <div id="new-post-form">        
+                <form id="blogForm">
+                    <p>Title: </p>
+                    <input type="text" name="title" id="title" placeholder="Enter blog title">
+                    <br>
+                    <p>Author: </p>
+                    <input type="text" name="author" id="author" placeholder="Enter author's name">
+                    <br>
+                    <p>Image URL: </p>
+                    <input type="url" name="image " id="URL" placeholder="Enter image URL">
+                    <br>
+                    <p>Content: </p>
+                    <textarea name="content" placeholder="Write your blog here"></textarea>
+                    <br>
+                </form>
+                <button id="submitButton"> + Add New Blog</button>        
+            </div>
+        </div>
         <div id="post-detail"></div>
-        <div id="new-post-form"></div>
     </div>
 </body>
 <script src="src/index.js"></script>
