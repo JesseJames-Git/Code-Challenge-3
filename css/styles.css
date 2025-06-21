@@ -1,0 +1,54 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#titleSection{
+    text-align: center;
+}
+#titleSection p{
+    margin-top:-10px;
+}
+
+#contentSection{
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 320px auto;
+    grid-template-rows: auto auto;
+    column-gap: 50px;
+    row-gap: 20px;
+}
+#post-list{
+    grid-column: 1;
+    grid-row: 1;     
+   background-color: aliceblue;
+   width: 320px;
+   height: 420px;
+   border-color: black;
+   border: solid;
+   
+}
+
+#post-detail{
+    grid-column: 2; 
+    grid-row: 1;
+         
+    background-color: aliceblue;
+    width: 800px;
+    height: 420px;
+    border-color: black;
+    border: solid;
+    
+}
+#new-post-form{
+   grid-column: 1 ;  
+   grid-row: 2;      
+   background-color: aliceblue;
+   width: 320px;
+   height: 420px;
+   border-color: black;
+   border: solid;
+   
+}
+div{
+    border-radius: 16px;
+}
