@@ -44,28 +44,34 @@ function titleList (title){
     
 }
 
-fetch("http://localhost:3000/Posts")
-.then (resp => resp.json())
-.then ( data => { 
-    data.forEach(post => {
-        titleList(post.postTitle)  
+function displayPosts(){
+    fetch("http://localhost:3000/Posts")
+    .then (resp => resp.json())
+    .then ( data => { 
+        data.forEach(post => {
+            titleList(post.postTitle)  
+        })
     })
-})
+}
 
 function addNewPostListener (){
-    const submitPost = document.getElementById("submitButton")
-    submitPost.document.addEventListener('submit', (event)=>{
+    const form = document.getElementById("blogForm")
+    form.addEventListener('submit', (event)=>{
         event.preventDefault()
+        postMaker()
     })
 
 }
 
 function postMaker(){
+    const form = document.getElementById("blogForm")
+    const formData = new FormData(form)
+
     const newBlog = {
-        title: FormData.get("title"),
-        author: FormData.get("author"),
-        image: FormData.get("image"),
-        content: FormData.get("content")
+        postTitle: formData.get("title"),
+        author: formData.get("author"),
+        imageURL: formData.get("image"),
+        content: formData.get("content")
     }
     const poster ={
         method :"POST",
@@ -77,9 +83,16 @@ function postMaker(){
     }
     fetch("http://localhost:3000/posts", poster)
     .then(resp => resp.json())
-    .then(data =>{
-        data.forEach(post => {
-            titleList(post.postTitle)  
+    .then(post =>{        
+            titleList(post.postTitle)
+            form.reset()  
         })
-    })
 }
+
+function main(){
+    displayPosts()
+    addNewPostListener()
+}
+document.addEventListener('DOMContentLoaded', main)
+
+
