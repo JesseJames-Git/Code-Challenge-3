@@ -1,4 +1,4 @@
-# CODE CHALLENGE 2
+# CODE CHALLENGE 3
 ## Description
 This is a short project to be made in the school's Code Challenge 3, a Post Manager for blogs.
 
