@@ -43,7 +43,7 @@ function showFirstPost(post) {
 }
 
 function displayPosts() {
-    fetch("http://localhost:3000/Posts")
+    fetch("https://code-challenge-3-1-l4q7.onrender.com/Posts")
         .then(resp => resp.json())
         .then(data => {
             data.forEach(post => {
@@ -84,7 +84,7 @@ function postMaker() {
         body: JSON.stringify(newBlog)
     };
 
-    fetch("http://localhost:3000/posts", poster)
+    fetch("https://code-challenge-3-1-l4q7.onrender.com/Posts", poster)
         .then(resp => resp.json())
         .then(post => {
             titleList(post); 
