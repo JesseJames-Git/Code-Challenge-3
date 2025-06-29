@@ -2,23 +2,23 @@
 ## Description
 This is a short project to be made in the school's Code Challenge 3, a Post Manager for blogs.
 
-It consist of : 
+It consists of : 
 1. A HTML file for the website structure
-2. A CSS file for styliing
+2. A CSS file for styling
 3. A .json file where input data is contained.
 4. A Javascript file for DOM manipulation, Event listening and Communication with the live server(db.json).
 
-A HTML document was used to diplay the results and after enough testing the codes were working well.
+A HTML document was used to display the results and after enough testing the codes were working well.
 
 ## Using the Website.
 ### Requirements:
 - A computer, tablet or phone
-- Internet acces
-- A morden web browser
+- Internet access
+- A mordern web browser
 
 ### How to use.
 - Input the data into the input fields given and submit the form using the button provided.
-- Click on any title on the list with the heading "Blogs" to view the conent of the blog post.
+- Click on any title on the list with the heading "Blogs" to view the content of the blog post.
 
 ## Local use
 If you would like to use my code you'll need:
