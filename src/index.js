@@ -97,10 +97,4 @@ function main() {
     displayPosts();
     addNewPostListener();
 }
-
-function deletePost(form){
-    const form = document.getElementById("blogform")
-    
-}
-
 document.addEventListener('DOMContentLoaded', main);
