@@ -1,0 +1,11 @@
+# Node.js dependencies
+node_modules/
+
+# Optional log files
+*.log
+
+# macOS system files (if applicable)
+.DS_Store
+
+# Environment variables (if you ever add one)
+.env
