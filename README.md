@@ -10,11 +10,15 @@ It consist of :
 
 A HTML document was used to diplay the results and after enough testing the codes were working well.
 
-## How to Use
+## Using the Website.
 ### Requirements:
 - A computer, tablet or phone
 - Internet acces
 - A morden web browser
+
+### How to use.
+- Input the data into the input fields given and submit the form using the button provided.
+- Click on any title on the list with the heading "Blogs" to view the conent of the blog post.
 
 ## Local use
 If you would like to use my code you'll need:
